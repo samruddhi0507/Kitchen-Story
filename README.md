@@ -49,44 +49,7 @@ Flow chart is for submit number 1 (some few changes were not added here)
 8.	Exception Handling: used to catch problems that arises in the code especially in I/O blocks.
 
 
-## How to run the program
-•	clone project
 
-  o	clone git : git clone https://github.com/MujtabaMohsin/Kitchen-Story
-  
-•	Import the “database\kitchen-story.sql” file to your database administration tool.
-
-•	Go to “Back-end\Kitchen-Story\src\main\resources\application.properties” file, open it.
-
-•	Edit some values of the database’ properties to be suit to your database administration tool.
-
-•	Run the back end project as a maven project:
-
-  o	cd to your project “Back-end\Kitchen-Story”
-  
-  o	mvn compile
-  
-  o	mvn exec:java -Dexec.mainClass=com.simplilearn.KitchenStory
-  
-  
-•	Open another command line for the front-end part.
-
-•	cd to your project “Front-end-end\Kitchen-Story”
-
-•	install the following:
-
-  o	npm install --save-dev
-  
-  o	npm install @angular/localize --save
-  
-  o	npm install bootstrap --save
-  
-  o	npm install font-awesome –save
-  
-  
-•	Run using ng serve –open
-
-•	It would be shown in http://localhost:4200/
 
 
 ## Screenshots
