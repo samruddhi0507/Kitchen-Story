@@ -1,0 +1,20 @@
+<div  >
+    <a *ngIf="username != 'admin'"  routerLink="/cart-details">
+        <button type="button" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> My Cart</button>
+        
+    </a>
+
+    <a *ngIf="username == 'admin'"  style="margin-left: 40px" routerLink="/update-account">
+        <button type="button" class="btn btn-success"><i class="fa fa-user"></i> Update Account</button>     
+    </a>
+     
+
+    <a *ngIf="username != 'admin'"  style="margin-left: 40px" routerLink="/login">
+        <button type="button" class="btn btn-light"><i class="fa fa-user"></i> Log In</button>     
+    </a>
+
+    
+    <a *ngIf="username == 'admin'"  style="margin-left: 40px" routerLink="/login">
+        <button type="button" class="btn btn-dark"><i class="fa fa-user"></i> Log Out</button>     
+    </a>
+</div> 

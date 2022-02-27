@@ -1,0 +1,28 @@
+<div class="menu-sidebar-content js-scrollbar1">
+    <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+            <li>
+                <a routerLink="/products" routerLinkActive="active-link">
+                    All
+                </a>
+            </li>    
+    
+                <li *ngFor="let tempProductCategory of productCategories">
+    
+                    <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
+                        {{ tempProductCategory.categoryName }}
+                    </a>
+    
+                </li>
+
+                <li>
+                <a *ngIf="username == 'admin'"  routerLink="/add-product">
+                    <button style="font-size: 12px;" type="button" class="btn btn-primary"> Add Product</button>     
+                </a>
+
+                 </li>
+
+            
+            </ul>
+    </nav>
+</div>
